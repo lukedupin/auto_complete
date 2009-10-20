@@ -56,7 +56,7 @@ module AutoCompleteMacrosHelper
   # <tt>:method</tt>::               Specifies the HTTP verb to use when the autocompletion
   #                                  request is made. Defaults to POST.
   # <tt>:parameters</tt>::           Specifies user parameters that will be passed when a
-  #                                  search is ran.  Hashes, arrays, and strings are valid.
+  #                                  search is exectued.  Hashes, arrays, and strings are valid.
   def auto_complete_field(field_id, options = {})
     function =  "var #{field_id}_auto_completer = new Ajax.Autocompleter("
     function << "'#{field_id}', "
